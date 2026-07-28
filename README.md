@@ -1,97 +1,71 @@
-Mobile User Behavior Analysis & Classification
-📌 Project Overview
+# Machine Learning Notebooks
 
-This project performs Exploratory Data Analysis (EDA) and builds a multi-class classification model to predict User Behavior Class based on mobile device usage patterns.
+A curated collection of machine learning notebooks exploring predictive modeling, data preprocessing, feature engineering, and model evaluation on real-world datasets.
 
-The objective was to analyze user behavior trends and implement a structured machine learning pipeline using Python and Scikit-learn.
+This repository serves as a growing archive of hands-on experiments and mini-projects completed while learning and applying machine learning concepts.
 
-📂 Dataset
+---
 
-Mobile Device Usage and User Behavior Dataset
-Source: Kaggle
-https://www.kaggle.com/datasets/valakhorasani/mobile-device-usage-and-user-behavior-dataset
+## Repository Structure
 
-The dataset contains 700 user records with the following features:
+```
+.
+├── mobile-user-behavior/
+├── heart-disease-prediction/
+├── rainfall-prediction/
+└── ...
+```
 
-App Usage Time (min/day)
-Screen On Time (hours/day)
-Battery Drain (mAh/day)
-Data Usage (MB/day)
-Number of Apps Installed
-Age
-Gender
-Operating System
-Device Model
+Each project is organized into its own directory and typically includes:
+- Jupyter Notebook (`.ipynb`)
+- Dataset (or dataset source)
+- Project-specific README (if applicable)
 
-Target Variable:
-User Behavior Class (1–5), representing increasing levels of mobile usage intensity.
+---
 
-🧹 Data Cleaning & Preprocessing
+## Projects
 
-The following preprocessing steps were performed:
+| Project | Description | Status |
+|---------|-------------|:------:|
+| Mobile User Behavior | Analysis and predictive modeling on mobile user behavior data. | ✅ |
+| Heart Disease Prediction | Classification model for predicting the likelihood of heart disease. | ⏳ |
+| Rainfall Prediction | Machine learning model for rainfall prediction using weather data. | ⏳ |
 
-Checked for missing values and duplicate records
-Removed non-informative column (User ID)
-Encoded categorical variables (Gender, Operating System, Device Model)
-Applied StandardScaler to normalize feature magnitudes
-Used stratified 80/20 train-test split to preserve class balance
-These steps ensured clean data and prevented data leakage during model training.
+> More notebooks and experiments will be added over time.
 
-📊 Exploratory Data Analysis
+---
 
-Grouped analysis and statistical summaries were performed to identify behavioral patterns across user classes.
+## Topics Covered
 
-Key Insights
+- Data Cleaning & Preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Classification
+- Regression
+- Model Evaluation
+- Scikit-learn Workflows
+- Data Visualization
 
-App Usage Time, Screen On Time, and Battery Drain show strong positive correlation with User Behavior Class.
-Screen-on time increases consistently across higher behavior classes
-Data usage rises significantly for heavy users (Class 5).
-Usage-related features demonstrate strong linear separability between classes.
+---
 
-Visualizations Included
-Correlation heatmap
-Scatter plot (App Usage vs Battery Drain)
-Boxplot (Screen On Time by Behavior Class)
-Barplot
+## Tech Stack
 
-These visualizations confirm clear behavioral segmentation based on usage intensity.
+- Python
+- Jupyter Notebook
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
-🤖 Model Implementation
+---
 
-Model Used: Logistic Regression (multi-class classification)
+## Purpose
 
-Implementation Steps
+The goal of this repository is to document my practical machine learning experiments, reinforce core concepts through implementation, and build a collection of reproducible notebooks on diverse datasets.
 
-Feature-target separation
-Stratified train-test split (80/20)
-Feature scaling using StandardScaler
-Model training on training dataset
-Evaluation on unseen test dataset
-Logistic Regression was selected due to the strong linear relationships observed during EDA.
+---
 
-📈 Model Performance
+## License
 
-Accuracy: 100.00% 
-
-The confusion matrix shows strong diagonal dominance, indicating high prediction accuracy across all five behavior classes. Minor misclassifications occur between adjacent behavior classes with slightly overlapping feature distributions.
-
-🔍 Conclusion
-
-The dataset exhibits clear behavioral stratification based on mobile usage intensity. Core usage features such as screen time, app usage, battery drain, and data consumption are strong predictors of user behavior class.
-Due to strong linear separability in the dataset, Logistic Regression performs effectively and generalizes well to unseen data.
-
-🚀 Future Improvements
-
-Experiment with alternative models (Random Forest, KNN)
-Perform hyperparameter tuning
-Apply cross-validation for robustness
-Engineer additional interaction features
-
-🛠 Tools & Technologies Used
-
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-learn
+This repository is licensed under the MIT License.

@@ -4,3 +4,6 @@ nyc-taxi-analysis/data/processed/*
 nyc-taxi-analysis/models/*
 nyc-taxi-analysis/results/figures/*
 nyc-taxi-analysis/results/metrics/*
+
+# Datasets
+credit-card-fraud-detection/*.csv
